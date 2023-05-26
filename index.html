@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="calculator">
+      <div class="header">
+        <h4>calc</h4>
+        <div class="themes">
+          <span>THEME</span>
+          <input type="range" min="1" max="3" value="1" id="">
+        </div>
+      </div>
+      <div class="results">
+        <span></span>
+      </div>
+      <div class="buttons-holder">
+        <div class="seven-btn" data-value="7">7</div>
+        <div class="eight-btn" data-value="8">8</div>
+        <div class="nine-btn" data-value="9">9</div>
+        <div class="six-btn" data-value="6">6</div>
+        <div class="five-btn" data-value="5">5</div>
+        <div class="four-btn" data-value="4">4</div>
+        <div class="three-btn" data-value="3">3</div>
+        <div class="two-btn" data-value="2">2</div>
+        <div class="one-btn" data-value="1">1</div>
+        <div class="zero-btn" data-value="0">0</div>
+        <div class="dot-btn" data-value=".">.</div>
+        <div class="slash-btn" data-value="/">/</div>
+        <div class="delete-btn" data-value="delete">DEL</div>
+        <div class="reset-btn" data-value="reset">Reset</div>
+        <div class="subtraction-btn" data-value="-">-</div>
+        <div class="plus-btn" data-value="+">+</div>
+        <div class="equal-btn" data-value="equal">=</div>
+        <div class="multi-btn" data-value="*">x</div>
+      </div>
+    </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

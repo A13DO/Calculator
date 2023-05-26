@@ -1,0 +1,181 @@
+:root {
+    --main-backgroundColor: #3b4664;
+}
+
+
+body {
+    background-color: var(--main-backgroundColor);
+}
+
+
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bold;
+    /* width: 300px;
+    height: 300px; */
+    width: fit-content;
+    /* background-color: #272c44; */
+    padding: 40px;
+    border-radius: 10px;
+}
+/* header */
+.calculator .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.calculator .header h4{
+    font-size: 20px;
+}
+.calculator .header .themes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.calculator .header .themes input{
+    width: 60px;
+    height: 20px;
+    appearance: none;
+    border-radius: 10px;
+    background-color: #252d44;
+    position: relative;
+    
+}
+.calculator .header .themes input::before {
+    content: "1    2    3";
+    color: white;
+    position: absolute;
+    top: -17px;
+    left: 6px;
+    white-space: pre;
+    font-size: 12px;
+    
+}
+/* Results */
+.calculator .results{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #181f32;
+    border-radius: 10px;
+    font-size: 2.5em;
+    padding: 0 20px;
+    margin: 20px 0 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 110px;
+}
+/* buttons */
+.calculator .buttons-holder {
+    background-color: #272c44;
+    border-radius: 10px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(5, 50px);
+    grid-template-areas:
+    "seven eight nine delete"
+    "four five six plus"
+    "one two three sbt"
+    "dot zero slash multi"
+    "reset reset equal equal"
+    ;
+    gap: 20px;
+}
+.calculator .buttons-holder div {
+    background-color: white;
+    border-bottom: 2px solid grey;
+    color: #272c44;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.calculator .buttons-holder div:hover {
+    background-color: #e4d3d3;
+}
+.calculator .nine-btn {
+    grid-area: nine;
+}
+.calculator .eight-btn {
+    grid-area: eight;
+    
+}
+.calculator .seven-btn {
+    grid-area: seven;
+    
+}
+.calculator .six-btn {
+    grid-area: six;
+    
+}
+.calculator .five-btn {
+    grid-area: five;
+    
+}
+.calculator .four-btn {
+    grid-area: four;
+}
+.calculator .three-btn {
+    grid-area: three;
+    
+}
+.calculator .two-btn {
+    grid-area: two;
+    
+}
+.calculator .one-btn {
+    grid-area: one;
+    
+}
+.calculator .zero-btn {
+    grid-area: zero;
+    
+}
+.calculator .dot-btn {
+    grid-area: dot;
+    
+}
+.calculator .slash-btn {
+    grid-area: slash;
+    
+}
+.calculator .delete-btn {
+    grid-area: delete;
+    background-color: #a2b2e3 !important;
+}
+
+.calculator .subtraction-btn {
+    grid-area: sbt;
+    
+}
+.calculator .plus-btn {
+    grid-area: plus;
+    
+}
+.calculator .multi-btn {
+    grid-area: multi;
+
+}
+.calculator .reset-btn {
+    grid-area: reset;
+    background-color: #a2b2e3 !important;
+    
+}
+.calculator .equal-btn {
+    grid-area: equal;
+    background-color: #f96c5b !important;
+}
+
+
+
